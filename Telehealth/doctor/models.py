@@ -49,7 +49,7 @@ class Doctor(AbstractUser):
     address = models.CharField(max_length=60, null=True, blank=True)
     image = models.ImageField(upload_to='uploads/', blank=True, null=True)
     about = models.TextField(blank=True, null=True)
-    role = models.ForeignKey(Role, on_delete=models.CASCADE, default=2)
+    role = models.ForeignKey(Role, on_delete=models.CASCADE, null=True)
 
     objects = UserManager()
 
