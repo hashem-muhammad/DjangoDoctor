@@ -1,0 +1,6 @@
+pip install Django==3.2
+pip install dj_rest_auth==2.1.11
+pip install djangorestframework==3.12.4
+pip install django-allauth
+pip install pillow
+pip install python-dateutil
